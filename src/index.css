@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+* {
+  outline: none;
+}
+
+body {
+  background-color: lightskyblue;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F2994A;
+  background: -webkit-linear-gradient(to left, #F2C94C, #F2994A);
+  background: linear-gradient(to left, #F2C94C, #F2994A);
+  animation: fade 0.5s ease;
+}
+
+li,
+.empty-msg {
+  animation: fade 0.5s ease;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
